@@ -1,0 +1,104 @@
+/*==== ALL TIME DEFAULTS ====*/
+
+body {
+    margin: 0px;
+    background-color: #eee;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+}
+
+.stripe {
+    width: 100%;
+}
+
+.content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+
+/*==== CURRENT DOCUMENT DEFAULTS ====*/
+
+.sans_serif {
+    font-family: Open Sans, Lato, Roboto, sans-serif;
+}
+
+/*==== CURRENT DOCUMENT ====*/
+
+/*== top stripe ==*/
+
+.logo {
+    display: inline-block;
+    text-align: center;
+}
+
+.net {
+    color: #555;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.sales {
+    color: #000;
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1em;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu ul li{
+    color: #333;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 2em;
+}
+
+.menu ul li:nth-child(3) {
+    padding: 0.3em 1.2em;
+    background-color: #666;
+}
+.menu a:link {
+    text-decoration: none;
+}
+.menu a:visited {
+    text-decoration: none;
+    color: #333;
+
+}
+.menu a:hover {
+
+}
+.menu a:active {
+
+}
+
+#sign_up {
+    color: white;
+}
+
+/*== header ==*/
+
+.header {
+    background-color: #666;
+    height: 400px;
+}
