@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>The Ultimate Learning System</title>
+        <title>Sign in</title>
+        
         
         <!-- STYLES -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <!-- End of STYLES -->
-        
-        <!-- SCRIPTs -->
-        <script type="text/javascript" src="ctac.js"></script>
-        <!-- End of SCRIPTs -->
         
         <!-- jQuery link-->
         <script src="http://www.google.com/jsapi" type="text/javascript"></script>
         <script type="text/javascript">google.load("jquery", "1.3.2");</script>
         <!-- end of jQuery link-->
         
+        <!-- SCRIPTs -->
+        <script type="text/javascript" src="ctac.js"></script>
+        <!-- End of SCRIPTs -->
         
         
     </head>
@@ -33,7 +33,7 @@
                         <ul>
                             <li><a href="index.html">home</a></li>
                             <li><a href="courses.html">courses</a></li>
-                            <li><a id="sign_up" href="signIn.html">sign up</a></li>
+                            <li><a id="sign_up" href="signin.html">sign up</a></li>
                             <li><a href="signin.html">sign in</a></li>
                             <li><a href="#">support</a></li>
                         </ul>
@@ -45,41 +45,45 @@
             </div>
             <div class="stripe hero">
                 <div class="content">
-                    <div class="half">
-                        <div class="vid_container">
-                            <iframe class="vid" src="https://www.youtube.com/embed/OFDAGiPJHL8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="half hero_text sans_serif valign_top">
-                        <h1>The Ultimate Learning System</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                        </p>
-                    </div>
+
                 </div>
             </div>
             
             <section class="stripe">
-                <div class="content justify">
-                    <a href="#">
-                        <div class="a_third sans_serif box">
-                        <h1>Teachers</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <div class="content">
+                    
+                        <div class="form sans_serif active jq1">
+                            <div class="align_left">
+                                <div class="sign_in center">Sign In</div>
+                                <div class="sign_up center jq_su">Sign Up</div>
+                            </div>
+                            <div class="form_body">
+                                <form>
+                                    Username:<input type="text"/>
+                                    Password:<input type="password"/>
+                                    <input type="submit" value="Sign In">
+                                
+                                </form>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="a_third sans_serif box">
-                        <h1>Students</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    
+                        <div class="form sans_serif inactive jq2">
+                            <div class="center">
+                                <div class="sign_up center jq_si">Sign In</div>
+                                <div class="sign_in center">Sign Up</div>
+                            </div>
+                            <div class="form_body">
+                                <form>
+                                    E-mail:<input type="text"/>
+                                    Username:<input type="text"/>
+                                    Password:<input type="password"/>
+                                    Repeat password:<input type="password"/>
+                                    <input type="submit" value="Sign Up">
+                                
+                                </form>
+                            </div>
                         </div>
-                    </a>
-                    <a href="courses.html">
-                        <div class="a_third sans_serif box">
-                            <h1>Courses</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        </div>
-                    </a>
-                    <div class="justifier"></div>
+                   
                     
                 </div>
             </section>

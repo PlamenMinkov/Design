@@ -5,6 +5,10 @@ body {
     background-color: #eee;
     font-size: 12px;
 }
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000;
+}
 
 .container {
     width: 100%;
@@ -12,15 +16,35 @@ body {
 
 .stripe {
     width: 100%;
+    margin-top: 10px;
 }
 
 .content {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
+.half {
+    width: 47%;
+    height: auto;
+    display: inline-block;
+}
+
+.a_third {
+    width: 29%;
+    padding-left: 20px; 
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.justifier {
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+}
 .left {
     float: left;
 }
@@ -31,6 +55,31 @@ body {
     clear: both;
 }
 
+.align_left: {
+    text-align: left;
+}
+.align_right: {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.justify {
+    text-align: justify;
+}
+.valign_top {
+    vertical-align: top;
+}
+.valign_middle {
+    vertical-align: middle;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+
 /*==== CURRENT DOCUMENT DEFAULTS ====*/
 
 .sans_serif {
@@ -39,7 +88,7 @@ body {
 
 /*==== CURRENT DOCUMENT ====*/
 
-/*== top stripe ==*/
+/*== header ==*/
 
 .logo {
     display: inline-block;
@@ -74,6 +123,7 @@ body {
 }
 
 .menu ul li:nth-child(3) {
+    color: white;
     padding: 0.3em 1.2em;
     background-color: #666;
 }
@@ -96,9 +146,267 @@ body {
     color: white;
 }
 
-/*== header ==*/
-
-.header {
+.menu_button {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 40px;
+    padding: 8px 0px;
     background-color: #666;
-    height: 400px;
+    text-align: center;
+}
+
+/*== hero ==*/
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #666;
+    height: auto;
+}
+
+.hero_text {
+    padding-left: 30px;
+    color: white;
+    position: relative;
+    top: 0px;
+}
+
+.hero_text h1 {
+    font-size: 3em;
+    font-weight: 300;
+    
+}
+.vid_container {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	
+}
+
+.vid {
+    border: 5px solid aqua;
+    position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+    overflow: hidden;
+}
+
+/*== 1st section - INDEX ==*/
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.box {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*== 1st section - SIGN IN/SIGN UP ==*/
+
+.sign_in, .sign_up {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    display: inline-block;
+}
+.sign_in {
+    padding: 10px 0px;
+    background-color: #ccc;
+    width: 50%;
+    
+}
+.sign_up {
+    padding: 6px 0px;
+    background-color: #999;
+    width: 48%;
+    
+}
+
+.form_body {
+    text-align: left;
+    padding: 1px;
+    background-color: #ccc;
+}
+.form_body input {
+    margin: 10;
+    margin-bottom: 20px;
+    display: block;
+   
+}
+form {
+    margin: 40px;
+    font-size: 1.2em;
+}
+.form {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*== 1st section - COURSES ==*/
+
+.courses {
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    
+}
+
+
+/*== 1st section - COURSE_OVERVIEW ==*/
+.a1 {
+    float: right;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 0.7em;
+    border: 1px solid white;
+    font-weight: 500;
+}
+.a2 {
+    display: none;
+    color: #999;
+    font-size: 2.1em;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #999;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+
+.courses>a:link, .courses>a:visited, .courses>a:hover, .courses>a:active {
+    color: white;
+}
+
+#hours {
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.course_line {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: 300;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.side_box {
+    padding: 10px;
+    background-color: #666;
+    width: 30%;
+}
+
+.course_tree {
+    max-width: 840px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.course_tree span{
+    margin-left: 20px;}
+
+.course_tree h1 {
+    margin-top: 0px;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #ddd;
+    color: #666;
+}
+
+.course_tree p {
+    color: #666;
+    padding-left: 40px;
+}
+
+.course_tree hr {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.enroll {
+    padding: 5px 30px;
+    float: right;
+    display: inline-block;
+    background-color: #99cccc;
+}
+
+/*== footer ==*/
+
+footer {
+    background-color: #999;
+}
+
+.f_box {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom_stripe {
+    padding: 12px 0px;
+    color: white;
+    text-align: center;
+    background-color: #333;
+    
+}
+
+/*== MEDIA QUERIES ==*/
+
+@media (max-width: 1200px) {
+    .content {
+        width: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .a_third {
+        width: 28%;
+    }
+}
+
+@media (max-width: 840px) {
+    .half, .a_third {
+        display: block;
+        width: auto;
+    }
+    .vid_container {
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .a1 {
+        display: none;
+    }
+    .a2 {
+        display: inline-block;
+    }
+}
+@media (max-width: 640px) {
+    .menu {
+        display: none;
+    }
+    .menu_button {
+        display: inline-block;
+    }
+    
 }
