@@ -73,13 +73,24 @@ a:link, a:visited, a:hover, a:active {
 .valign_middle {
     vertical-align: middle;
 }
+.middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
 .active {
     display: block;
 }
 .inactive {
     display: none;
 }
-
+.bold {
+    font-weight: 500;
+}
+.bolder {
+    font-weight: 700;
+}
 /*==== CURRENT DOCUMENT DEFAULTS ====*/
 
 .sans_serif {
@@ -147,9 +158,14 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #sign_up {
+    font-weight: 300;
     color: white;
 }
 
+#profile {
+    font-weight: 300;
+    color: white;
+}
 .menu_button {
     display: none;
     color: white;
@@ -404,6 +420,158 @@ textarea {
 
 }
 
+/*== 1st section - PROFILE ==*/
+
+.user_icon {
+    margin-left: 15%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    background-color: #999;
+    color: white;
+    font-size: 6em;
+    box-shadow: 1px 2px 5px #444;
+    display: inline-block;
+
+}
+.prof_text {
+    margin-left: 5%;
+    display: inline-block;
+}
+.prof_text h1 {
+    margin: 0px 0px;
+    padding: 0px;
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+}
+.prof_text h3 {
+    margin: 0px 0px;
+    padding: 0px;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+}
+
+.current_course {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    color: #666;
+}
+.continue {
+    margin-top: 30px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #cc6666;
+    color: white;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 30px;
+    
+}
+
+.continue div {
+    position: relative;
+    bottom: 2px;
+    font-size: 0.7em;
+}
+.progress {
+    width: 100%;
+}
+.progress h1{
+    text-align: left;
+    width: 40%;
+    font-size: 2em;
+    font-weight: 300;
+    color: #666;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    
+}
+.progress_bar {
+    display: inline-block;
+    width: 40%;
+    background-color: #ccc;
+}
+.progress_bar div{
+    width: 37%;
+    height: 5px;
+    background-color: #cc6666;
+}
+.profile_wrapper {
+    
+}
+
+.profile_courses, .profile_badges{
+   
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+    margin-top: 80px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px #666;
+}
+.profile_courses h1, .profile_badges h1 {
+    text-align: center;
+    color: #666;
+}
+.profile_badges {
+    text-align: justify;
+}
+
+.profile_courses ul {
+    color: #666;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+.profile_courses ul li{
+    margin-top: 10px;
+}
+
+.badge_out {
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #cc6666;
+    border-radius: 40px;
+}
+.badge_in {
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #ccccff;
+}
+
+.badge_in div{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #6666cc;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
 /*== footer ==*/
 
 footer {
@@ -465,6 +633,12 @@ footer {
     }
     .menu_button {
         display: inline-block;
+    }
+    .user_icon, .prof_text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     
 }

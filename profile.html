@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Sign in</title>
-        
+        <title>The Ultimate Learning System</title>
         
         <!-- STYLES -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <!-- End of STYLES -->
+        
+        <!-- SCRIPTs -->
+        <script type="text/javascript" src="ctac.js"></script>
+        <!-- End of SCRIPTs -->
         
         <!-- jQuery link-->
         <script src="http://www.google.com/jsapi" type="text/javascript"></script>
         <script type="text/javascript">google.load("jquery", "1.3.2");</script>
         <!-- end of jQuery link-->
         
-        <!-- SCRIPTs -->
-        <script type="text/javascript" src="ctac.js"></script>
-        <!-- End of SCRIPTs -->
         
         
     </head>
@@ -34,8 +34,7 @@
                         <ul>
                             <li><a href="index.html">home</a></li>
                             <li><a href="courses.html">courses</a></li>
-                            <li><a id="sign_up" href="signin.html">sign up</a></li>
-                            <li><a href="signin.html">sign in</a></li>
+                            <li><a id="profile" href="#">User Profile <span class="fa fa-angle-down"></span></a></li>
                             <li><a href="support.html">support</a></li>
                         </ul>
                     </div>
@@ -46,45 +45,69 @@
             </div>
             <div class="stripe hero">
                 <div class="content">
-
+                    <div class="user_icon">
+                        <div class="fa fa-user middle">
+                        </div>  
+                    </div>
+                    <div class="prof_text sans_serif">
+                        <h1>Johnatan <span class="bolder">DAWSON</span></h1>
+                        <h3><span class="bold">1-st</span> Grade Student</h3>
+                        
+                    </div>
                 </div>
             </div>
             
             <section class="stripe">
                 <div class="content">
+                    <div class="current_course sans_serif">JavaScript
+                        
+                    </div>
+                    <div class="continue sans_serif">CONTINUE
+                        <div class="fa fa-play "></div>
+                    </div>
+                    <div class="progress center">
+                        <h1 class="sans_serif">Progress <span class="right">37%</span></h1>
+                        <div class="progress_bar">
+                            <div></div>
+                        </div>
+                    </div>
                     
-                        <div class="form sans_serif active jq1">
-                            <div class="align_left">
-                                <div class="sign_in center">Sign In</div>
-                                <div class="sign_up center jq_su">Sign Up</div>
-                            </div>
-                            <div class="form_body">
-                                <form>
-                                    Username:<input type="text"/>
-                                    Password:<input type="password"/>
-                                    <input type="submit" value="Sign In">
-                                
-                                </form>
-                            </div>
+                    <div class="justify sans_serif profile_wrapper">
+                        <div class="half profile_courses">
+                            <h1>Courses</h1>
+                            <ul>
+                                <li>Basic HTML/CSS<span class="right percent">100%</span></li>
+                                <li>jQuery<span class="right percent">100%</span></li>
+                                <li>Make a website<span class="right percent">100%</span></li>
+                                <li>Make a responsive website<span class="right percent">100%</span></li>
+                                <li>Something Else<span class="right percent">100%</span></li>
+                            </ul>
                         </div>
                     
-                        <div class="form sans_serif inactive jq2">
-                            <div id="tab2">
-                                <div class="sign_up center jq_si">Sign In</div>
-                                <div class="sign_in center">Sign Up</div>
+                        <div class="half profile_badges">
+                            <h1>Earned Badges</h1>
+                            
+                            <div class="badge_out">
+                                <div class="badge_in"><div>Badge 1</div></div>
                             </div>
-                            <div class="form_body">
-                                <form>
-                                    E-mail:<input type="text"/>
-                                    Username:<input type="text"/>
-                                    Password:<input type="password"/>
-                                    Repeat password:<input type="password"/>
-                                    <input type="submit" value="Sign Up">
-                                
-                                </form>
+                            
+                            <div class="badge_out">
+                                <div class="badge_in"><div>Badge 1</div></div>
                             </div>
+                            
+                            <div class="badge_out">
+                                <div class="badge_in"><div>Badge 1</div></div>
+                            </div>
+                            
+                            <div class="badge_out">
+                                <div class="badge_in"><div>Badge 1</div></div>
+                            </div>
+                            
+                            <div class="justifier"></div>
+                            
                         </div>
-                   
+                        <div class="justifier">
+                    </div>
                     
                 </div>
             </section>
