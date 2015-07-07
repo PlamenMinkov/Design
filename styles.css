@@ -88,6 +88,10 @@ a:link, a:visited, a:hover, a:active {
 
 /*==== CURRENT DOCUMENT ====*/
 
+#tab2 {
+    text-align: right;
+}
+
 /*== header ==*/
 
 .logo {
@@ -215,18 +219,20 @@ section {
 /*== 1st section - SIGN IN/SIGN UP ==*/
 
 .sign_in, .sign_up {
-    color: white;
-    text-transform: uppercase;
+    
+    
     font-size: 1.2em;
     display: inline-block;
 }
 .sign_in {
+    color: #333;
     padding: 10px 0px;
     background-color: #ccc;
     width: 50%;
     
 }
 .sign_up {
+    color: white;
     padding: 6px 0px;
     background-color: #999;
     width: 48%;
@@ -239,7 +245,7 @@ section {
     background-color: #ccc;
 }
 .form_body input {
-    margin: 10;
+    margin: 10px;
     margin-bottom: 20px;
     display: block;
    
@@ -344,6 +350,58 @@ form {
     float: right;
     display: inline-block;
     background-color: #99cccc;
+}
+
+
+/*== 1st section - SUPPORT ==*/
+.form_body > h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #666;
+    text-align: center;
+}
+
+
+.support_wrap {
+    max-width: 800px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.support_box {
+    padding: 1px 20px;
+    background-color: #ddd;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bbb;
+}
+.support_box h1 {
+    display: inline-block;
+    color: #333;
+}
+.subtitle {
+    font-weight: 200;
+    color: #333;
+}
+.view_post {
+    color: #996666;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-top: 20px;
+    float: right;
+    display: inline-block;
+    background-color: #ddd;
+    
+}
+.view_post:hover {
+    box-shadow: 1px 2px 5px #666;
+    color: #ff6666;
+}
+textarea {
+    display: block;
+
 }
 
 /*== footer ==*/
